@@ -1,1 +1,10 @@
-// code goes here
+/* code goes here
+   Creates a request pipe
+   Creates a reply pipe
+
+   Executes child processes and passes the
+   appropriate file descriptors to them as
+   command line args
+
+   Waits for children to complete
+*/
