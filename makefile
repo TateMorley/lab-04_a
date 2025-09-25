@@ -1,14 +1,14 @@
-go: go.o calculator.o user.o
-	gcc go.o calculator.o user.o -o go
+# makefile
+all: go user calculator
 
-go.o: go.c go.h
-	gcc -c go.c -o go.o
+go: go.c
+	gcc go.c -o go
 
-calculator.o: calculator.c calculator.h
-	gcc -c calculator.c -o calculator.o
+user: user.c
+	gcc user.c -o user
 
-user.o: user.c user.h
-	gcc -c user.c -o user.o
+calculator: calculator.c
+	gcc calculator.c -o calculator
 
 clean:
-	rm -f *.o go
+	rm -f go user calculator
