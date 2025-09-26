@@ -1,13 +1,11 @@
-/* code goes here
-   Creates a request pipe
-   Creates a reply pipe
-
-   Executes child processes and passes the
-   appropriate file descriptors to them as
-   command line args
-
-   Waits for children to complete
-*/
+//---------------------------------------------------------
+// Assignment : Lab-04_a IPC_Pipes
+// Date : 9/25/25
+//
+// Author : Lab-04_a-Pipes_Team02
+//
+// File Name : go.c
+//---------------------------------------------------------
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/types.h>
@@ -100,7 +98,7 @@ int main(void)
    waitpid(user_pid, NULL, 0);
 
    // Wait for calculator to finish
-   printf("\nGo is now waiting for Calculator to terminate\n");
+   printf("Go is now waiting for Calculator to terminate\n");
    waitpid(calc_pid, NULL, 0);
 
    printf("\nThe Go process has terminated\n");

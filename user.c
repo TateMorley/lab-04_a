@@ -1,3 +1,11 @@
+//---------------------------------------------------------
+// Assignment : Lab-04_a IPC_Pipes
+// Date : 9/25/25
+//
+// Author : Lab-04_a-Pipes_Team02
+//
+// File Name : user.c
+//---------------------------------------------------------
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
